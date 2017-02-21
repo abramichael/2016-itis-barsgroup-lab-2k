@@ -1,0 +1,18 @@
+{% for t in tweets %}
+
+    <p><b>{{ t.user }}: </b>{{ t.text }} </p>
+    <p><i> {{ t.pub_date }}</i></p>
+    <p>
+    <form method="POST" action="{% url 'feed:retweet' %}">
+    {% csrf_token %}
+        <input type="hidden" name="tweet_id" value="{{ t.id }}"/>
+        <input type="submit" value="Retweet"/>
+    </form>
+    <form method="POST" action="{% url 'feed:cite' %}">
+    {% csrf_token %}
+        <input type="hidden" name="tweet_id" value="{{ t.id }}"/>
+        <input type="submit" value="Cite"/>
+    </form>
+    <hr/>
+
+{% endfor %}

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+</head>
+<body>
+<h1>Feed</h1>
+<form method="POST">
+    {% csrf_token %}
+    <textarea name="text" placeholder="Enter text"></textarea>
+    <input type="submit" value="send"/>
+</form>
+
+{% for t in items %}
+    {% if t.isRT %}
+        <i>Retweeted by {{ t.user }}</i>
+        <p><b>{{ t.tweet.user }}: </b>{{ t.tweet.text }} </p>
+        <p><i> {{ t.tweet.pub_date }}</i></p>
+        <hr/>
+    {% else %}
+        <p><b>{{ t.user }}: </b>{{ t.text }} </p>
+        <p><i> {{ t.pub_date }}</i></p>
+        <hr/>
+    {% endif %}
+
+{% endfor %}
+&copy; ITIS BARS Group Lab 2017
+</body>
+</html>
