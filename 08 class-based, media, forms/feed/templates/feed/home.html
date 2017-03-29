@@ -1,0 +1,39 @@
+{% extends "feed/base.html" %}
+
+{% load my_filters_and_tags %}
+{% load static %}
+
+{% block include %}
+    <link rel="stylesheet" type="text/css" href="{% static 'feed/style.css' %}"/>
+{% endblock %}
+
+{% block content %}
+    <h1>Feed</h1>
+
+    <form method="POST" enctype="multipart/form-data">
+        {% csrf_token %}
+        {{ f.as_p }}
+        <input type="submit" value="send"/>
+    </form>
+
+    {{ s |safe }}
+    <p>Authors: {% who items %}</p>
+    {% for t in items %}
+        {% if t.isRT %}
+            <i>Retweeted by {{ t.user }}</i>
+            <p><b>{{ t.tweet.user }}: </b>{{ t.tweet.text|truncate }} </p>
+            <p><i> {{ t.tweet.pub_date }}</i></p>
+            <hr/>
+        {% else %}
+            <p><b>{{ t.user }}: </b></p>
+            <p>{{ t.image|render|safe }}</p>
+            <p>{{ t.text|truncate }} </p>
+            <p><i> {{ t.pub_date }}</i></p>
+            <hr/>
+        {% endif %}
+
+    {% endfor %}
+
+    {% include "feed/dummy01.html" %}
+{% endblock %}
+

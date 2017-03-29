@@ -1,0 +1,20 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Твинстаграм | {% block title %} ЛАБУДА {% endblock %}</title>
+    {% block include %}
+        <link rel="stylesheet" type="text/css" href="{% static 'style.css' %}"/>
+    {% endblock %}
+
+</head>
+<body>
+{% block content %}
+
+{% endblock %}
+<hr/>
+&copy; ITIS BARS Group Lab 2017
+</body>
+</html>
