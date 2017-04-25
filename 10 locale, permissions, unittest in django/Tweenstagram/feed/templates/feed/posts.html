@@ -1,0 +1,9 @@
+{% extends "feed/base.html" %}
+{% block content %}
+
+    {% for post in posts %}
+        <b>Date: {{ post.pub_date }}</b>
+        <p>{{ post.text }}</p>
+    {% endfor %}
+
+{% endblock %}

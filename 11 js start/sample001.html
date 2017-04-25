@@ -1,0 +1,37 @@
+<html>
+	<head>
+
+	</head>
+
+	<body>
+
+		<p id="main-greeting" class="greeting text2015">
+			<b>Hello!</b>
+		</p>
+
+		<div id="greeting1" class="greeting">Hi, Nikita!</div>
+		<div id="greeting2" class="gretting">Hello, Timurlar!</div>
+		<div id="question1" class="question">Where is Katya?</div>
+
+		<input type="text" id="text-field"/>
+
+		<button onclick="fill()">Fill with text</button>
+		<hr/>
+		<div>
+		<button onclick="f()">switch to goodbye</button>
+		</div>
+		<script type="application/javascript">
+			function f() {
+				var o = document.getElementById("main-greeting");
+				//console.log(o.innerText);
+				o.innerHTML = "<b>Good bye!</b>";	
+			}
+			function fill() {
+				var o = document.getElementById("text-field");
+				o.value = "Robert";
+			}
+		</script>
+
+
+	</body>
+</html>

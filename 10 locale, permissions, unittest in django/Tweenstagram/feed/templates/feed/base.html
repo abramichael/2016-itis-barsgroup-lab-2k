@@ -1,0 +1,22 @@
+{% load static %}
+{% load i18n %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{% trans "Tweenstagram" %} | {% block title %}
+        {% trans "BULLSHIT" %} {% endblock %}</title>
+    {% block include %}
+        <link rel="stylesheet" type="text/css" href="{% static 'style.css' %}"/>
+    {% endblock %}
+
+</head>
+<body>
+{% block content %}
+
+{% endblock %}
+<hr/>
+&copy; ITIS BARS Group Lab 2017
+</body>
+</html>

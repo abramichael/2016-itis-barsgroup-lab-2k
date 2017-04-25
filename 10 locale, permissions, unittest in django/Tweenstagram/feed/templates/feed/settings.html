@@ -1,0 +1,10 @@
+{% extends "feed/base.html" %}
+{% load i18n %}
+{% block content %}
+    <form method="POST" action="{% url "feed:settings" %}">
+        {% csrf_token %}
+        {{ f.errors }}
+        {{ f.as_p }}
+        <input type="submit" value={% trans "Send" %}/>
+    </form>
+{% endblock %}

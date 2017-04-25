@@ -1,0 +1,81 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2017-04-18 17:27+0300\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: .\feed\templates\feed\base.html:8
+msgid "Tweenstagram"
+msgstr "Твинстаграм"
+
+#: .\feed\templates\feed\base.html:9
+msgid "BULLSHIT"
+msgstr "ЛАБУДА"
+
+#: .\feed\templates\feed\dummy01.html:2
+msgid "LAST TWEET"
+msgstr "ПОСЛЕДНИЙ ТВИТ"
+
+#: .\feed\templates\feed\home.html:11
+msgid "Feed"
+msgstr "Лента"
+
+#: .\feed\templates\feed\home.html:16
+msgid "send"
+msgstr "отправить"
+
+#: .\feed\templates\feed\home.html:20
+msgid "Authors"
+msgstr "Авторы"
+
+#: .\feed\templates\feed\home.html:23
+msgid "Retweeted by"
+msgstr "Ретвитнул"
+
+#: .\feed\templates\feed\list_tweets.html:12
+msgid "Retweet"
+msgstr "Ретвитнуть"
+
+#: .\feed\templates\feed\list_tweets.html:17
+msgid "Cite"
+msgstr "Цитировать"
+
+#: .\feed\templates\feed\profile.html:8
+msgid "Profile"
+msgstr "Профиль"
+
+#: .\feed\templates\feed\profile.html:9
+msgid "Username"
+msgstr "Имя пользователя"
+
+#: .\feed\templates\feed\profile.html:10
+msgid "Email"
+msgstr "Э.Почта"
+
+#: .\feed\templates\feed\settings.html:8
+msgid "Send"
+msgstr "Отправить"
+
+#: .\feed\views.py:105
+msgid "Not supported"
+msgstr "Не поддерживается"
+
+#: .\feed\views.py:116
+msgid "DUMMY!"
+msgstr "ЗАГЛУШКА!"
+
+#: .\feed\views.py:141
+msgid "GOOD"
+msgstr "ХОРОШО"
